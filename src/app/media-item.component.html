@@ -1,10 +1,17 @@
-<h3>VOYAGER FOCUS UC, STANDARD</h3>
-<div class ="registration-date">
-  <p>Registered on 1/13/2016</p>
-</div>
-<div class="tools">
-  <a class="details">
-    <h2>1</h2>
+
+  <h3>{{ productItem.name }}</h3>
+  <ng-template [ngIf] = "productItem.registeredOn">
+    <div class ="registration-date">
+      <p>Registered on {{ productItem.registeredOn }}</p>
+    </div>
+  </ng-template>
+
+  <div class="tools">
+    <a (click)="onRegister()" class="details">
     Registered
-  </a>
-</div>
+    </a>
+    <a (click)="onDelete()" class="delete">
+    remove
+    </a>
+  </div>
+

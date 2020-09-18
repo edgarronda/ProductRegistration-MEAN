@@ -8,6 +8,7 @@
     padding: 10px;
     color: #000;
     margin: 0 12px 12px 0;
+    position: relative;
   }
   h2 {
     font-size: 1.6em;
@@ -16,23 +17,19 @@
   h3{ 
     margin:5px;
   }
-  :host(.medium-movies) {
-    border-color: #53ace4;
+  :host(.medium-office) {
+    border-color: #ff3b00;
   }
-  :host(.medium-movies) > h2 {
-    color: #53ace4;
-  }
-  :host(.medium-series) {
-    border-color: #45bf94;
-  }
-  :host(.medium-series) > h2 {
-    color: #45bf94;
+  :host(.medium-mobile) {
+    border-color: #00213c;
   }
   .tools {
-    margin-top: 8px;
+    margin-bottom: 8px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    position: absolute;
+    bottom: 0;
   }
   .favorite {
     width: 24px;
@@ -49,22 +46,20 @@
   .favorite.is-favorite.is-favorite-hovering {
       fill: #ec4342;
   }
-  .delete {
+  .delete, .details{
     display: block;
-    background-color: #ec4342;
+    margin: 1px;
     padding: 4px;
     font-size: .8em;
     border-radius: 4px;
     color: #ffffff;
+  }
+  .delete {
+    background-color: #ec4342;
     cursor: pointer;
   }
   .details {
-    display: block;
     background-color: #37ad79;
-    padding: 4px;
-    font-size: .8em;
-    border-radius: 4px;
-    color: #ffffff;
     text-decoration: none;
   }
   .registration-date{
