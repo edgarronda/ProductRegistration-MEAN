@@ -6,6 +6,8 @@
   }
   header {
     color: #c6c5c3;
+    margin: 10px;
+    font-style: italic;
   }
   header.medium-movies {
     color: #53ace4;

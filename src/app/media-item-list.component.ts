@@ -22,7 +22,7 @@ export class MediaItemListComponent {
       medium: 'WEB',
       category: 'Mobile',
       year: 2015,
-      registeredOn: null,
+      registeredOn: 1600467968000,
       isFavorite: true
     }, {
       id: 3,
@@ -30,7 +30,7 @@ export class MediaItemListComponent {
       medium: 'WEB',
       category: 'Office',
       year: 2016,
-      registeredOn: null,
+      registeredOn: 1561242368000,
       isFavorite: false
     }, {
       id: 4,
@@ -38,7 +38,7 @@ export class MediaItemListComponent {
       medium: 'WEB',
       category: 'Office',
       year: null,
-      registeredOn: null,
+      registeredOn: 1600467968000,
       isFavorite: true
     }, {
       id: 5,

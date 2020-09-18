@@ -1,4 +1,7 @@
-<section>
+<header>
+  <div>{{ productItems | categoryList }}</div>
+</header>
+<section> 
     <mw-media-item 
       *ngFor="let productItem of productItems"
       [productItem]="productItem"
