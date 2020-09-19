@@ -1,0 +1,11 @@
+<header>
+  <div>{{ productItems | categoryList }}</div>
+</header>
+<section> 
+    <mw-media-item 
+      *ngFor="let productItem of productItems"
+      [productItem]="productItem"
+      (delete)="onProductItemDelete($event)"
+      [ngClass]="{ 'medium-office': productItem.category === 'Office', 'medium-mobile': productItem.category === 'Mobile' }">
+    </mw-media-item>
+  </section>

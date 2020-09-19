@@ -1,0 +1,67 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 140px;
+    border: 2px solid #e6e6e6;
+    background-color: #f2f2f2;
+    padding: 10px;
+    color: #000;
+    margin: 0 12px 12px 0;
+    position: relative;
+  }
+  h2 {
+    font-size: 1.6em;
+    flex: 1;
+  }
+  h3{ 
+    margin:5px;
+  }
+  :host(.medium-office) {
+    border-color: #ff3b00;
+  }
+  :host(.medium-mobile) {
+    border-color: #00213c;
+  }
+  .tools {
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+  }
+  .favorite {
+    width: 24px;
+    height: 24px;
+    fill: #bdc2c5;
+    cursor: pointer;
+  }
+  .favorite.is-favorite {
+      fill: #37ad79;
+  }
+  .favorite.is-favorite-hovering {
+      fill: #45bf94;
+  }
+  .favorite.is-favorite.is-favorite-hovering {
+      fill: #ec4342;
+  }
+  .delete, .details{
+    display: block;
+    margin: 1px;
+    padding: 4px;
+    font-size: .8em;
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  .delete {
+    background-color: #ec4342;
+    cursor: pointer;
+  }
+  .details {
+    background-color: #37ad79;
+    text-decoration: none;
+  }
+  .registration-date{
+    margin: 10px;
+  }

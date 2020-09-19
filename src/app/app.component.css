@@ -1,0 +1,32 @@
+
+.description {
+  color: #000;
+}
+:host {
+    display: flex;
+    min-height: 100%;
+  }
+  nav {
+    width: 68px;
+    background-color: #FFF;
+  }
+  nav .icon {
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+  }
+  section {
+    width: 100%;
+    background-color: #FFF;
+  }
+  section > header {
+    color: #ffffff;
+    padding: 10px;
+    background-color: #c63c1d;
+  }
+  section > header > h1 {
+    font-size: 2em;
+  }
+  section > header .description {
+    font-style: italic;
+  }

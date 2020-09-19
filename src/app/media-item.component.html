@@ -1,0 +1,17 @@
+
+  <h3>{{ productItem.name | uppercase }}</h3>
+  <ng-template [ngIf] = "productItem.registeredOn">
+    <div class ="registration-date">
+      <p>Registered on {{ productItem.registeredOn | date: 'shortDate' }}</p>
+    </div>
+  </ng-template>
+
+  <div class="tools">
+    <a (click)="onRegister()" class="details">
+    Registered
+    </a>
+    <a (click)="onDelete()" class="delete">
+    remove
+    </a>
+  </div>
+
